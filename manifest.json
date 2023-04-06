@@ -1,0 +1,9 @@
+{
+    "name" : "MeMoList",
+    "short_name" : "메모 & 리스트",
+    "icons" : [],
+    "start_url" : "./",
+    "display" : "standalone",
+    "background-color" : "#fff",
+    "theme_color" : "#fff"
+}
