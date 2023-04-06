@@ -3,9 +3,9 @@
     "short_name" : "메모 & 리스트",
     "icons": [
         {
-          "src":"./img/icon/logo.png",
+          "src":"./img/icon/made_ryo.jpg",
           "sizes":"512x512",
-          "type":"image/png"
+          "type":"image/jpg"
         }
       ],
     "start_url" : "./",
