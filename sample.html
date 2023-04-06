@@ -8,7 +8,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="sample.css">
 </head>
-
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('service-worker.js') // serviceWorker 파일 경로
+                .then((reg) => {
+                    console.log('Service worker registered.', reg);
+                })
+                .catch(e => console.log(e));
+        });
+    }
+  </script>
 <body>
     <div class="bar">
         <h4 class="project">deokdam</h4>
