@@ -3,7 +3,7 @@
     "short_name" : "메모 & 리스트",
     "icons": [
         {
-          "src":"./img/icon/drxlogo.png",
+          "src":"./img/icon/logo.png",
           "sizes":"512x512",
           "type":"image/png"
         }
