@@ -1,70 +1,39 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://supsok.github.io/gbsw/touchstrap/css/touchstrap.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://supsok.github.io/gbsw/touchstrap/js/touchstrap.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="../js/index.js"></script>
+    <link rel="stylesheet" href="../style/global.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="sample.css">
-    <link rel="stylesheet" href="https://supsok.github.io/gbsw/touchstrap/css/touchstrap.css">
-    <link rel="manifest" href="./manifest.json" />
-</head>
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('service-worker.js') // serviceWorker 파일 경로
-                .then((reg) => {
-                    console.log('Service worker registered.', reg);
-                })
-                .catch(e => console.log(e));
-        });
-    }
-  </script>
-<body>
-    <header class="bar bar-nav bar-light bg-faded">
-        <h1 class="title">Title</h1>
-      </header>
-    <div class="content">
-        스크림에서 무서운 경기력을 보여주고 있다는 썰이 들려오면서 한껏 기대를 받고 있었지만 첫 경기인 KT전에서는 기복 있는 모습이 나왔다. 라인전에서 고전하는 장면이 나왔으나 최근 핫한 아이템인 신파자를 채용한 이즈리얼로 폭발적인 딜링을 뿜어내기도 했다. 폼을 끌어올려야 할 듯.
+  </head>
+  <body>
+    <header class="bar bar-nav bar-light bg-faded bg-primary">
+      <h1 class="title">Trendy Go</h1>
+    </header>
 
-이후 리브 샌드박스와 DRX전에서도 라인전에서는 특출난 모습이 없었지만 한타 때 활약하며 팀 승리에 기여하였다. 그러나 2주차 젠지전에서 2세트를 제외하고는 시종일관 룰러 - 라이프 듀오에게 켈린과 함께 철저히 밀리면서 패배에 크게 일조하고 말았다. 특히 트리스타나를 잡은 3세트에서는 룰러의 바루스를 상대로 CS를 40개나 밀리는 등 말 그대로 라인전에서부터 폭파당하면서 게임에서 지워졌다.
+    <nav class="bar bar-tab bar-light bg-faded">
+      <a class="tab-item active" role="button">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">Home</span>
+      </a>
+      <a class="tab-item" role="button">
+        <span class="icon icon-person"></span>
+        <span class="tab-label">Profile</span>
+      </a>
+      <a class="tab-item bg-primary bar-dark" role="button">
+        <span class="icon icon-star-filled"></span>
+        <span class="tab-label">Favorites</span>
+      </a>
+    </nav>
 
-라인전이 강해지며 명실상부한 팀의 캐리 라인으로 자리잡았던 스프링과 달리 이번 시즌에는 꽤 힘겨워 하는 모습이 자주 나오고 있다. 탑솔러인 리치도 라인전이 불안한 상황에서 믿을맨 듀오인 덕담 - 켈린마저 무너진다면 팀 입장에서 힘든 싸움을 해야하기에 폼을 끌어올려야 할 것으로 보인다.
-
-3주차 T1전에서는 1세트 때 바루스를 잡았으나 자주 끊기고 적의 노림수에 당해주는 등 안 좋은 모습과 살벌한 포킹으로 적을 몰아내는 등 좋은 모습을 번갈아 보여주었다. 2세트에서는 카이사로 한타 때 제 몫을 하며 승리에 기여하였다. 그러나 스프링 시즌에 보여주었던 활약을 떠올려보면 영 불안한 것이 사실. 조금 더 집중력을 끌어올릴 필요가 있어 보인다.
-
-결국 프레딧 브리온전에서 작년 서머가 연상되는 최악의 기량을 선보이며 팀 패배의 원흉으로 전락하고 말았다. 2연 이즈리얼을 잡았는데 상대 헤나의 바루스에게 라인전에서 스무스하게 밀리며 포탑 채굴을 연이어 당하고 바루스의 궁극기가 찰 때마다 궁극기 - Q 콤보를 얻어맞고 뒤로 빠지는 등 취약한 모습이 연이어 나왔고 한타 때도 적을 잡겠답시고 앞비전을 썼다가 신 짜오의 삼조격에 띄워지면서 그대로 폭사하는 등 참담한 경기력만 선보이며 게임을 말아먹었다.
-
-스프링의 강한 라인전 수행 능력은 플루크였다는 듯 발휘되지 않고 있고 약한 라인전, 무리한 포지셔닝 등 작년 서머로 롤백하는 듯한 모습이 나오며 침체에서 헤어나오지 못하고 있다. 확실한 개선이 필요해보인다.
-
-다음 경기인 담원 기아전, 1세트에서는 카이사를 플레이했으나 전체적인 체급 면에서 밀리는 중 바텀도 복귀한 고스트 - 베릴 듀오에게 라인전에서 밀리면서 패배에 일조했다. 그렇게 연패에 빠지는가 했지만 2, 3세트 때 연속으로 본인의 시그니처 픽인 아펠리오스를 플레이하여 라인전에서 압살하는 것은 물론 특유의 중력포 속박을 활용한 플레이메이킹을 연거푸 성공시키며 팀 승리에 기여함과 동시에 통산 DK전 첫 승을 신고했다. 특히 벽 뒤에서 혼자 숨어 있다가 궁극기 - 중력보 속박 콤보를 활용해 고베 듀오를 묶어 킬을 만들어내는 장면은 이 날 보여준 활약의 백미.
-
-한화생명전에서 1세트 때 데프트의 직스를 뺏어와 다시금 준수한 숙련도를 어필하며 팀 승리에 일조했으나 2, 3세트에서 본인은 분전했지만 탑이 터져 나간 끝에 업셋을 내주고 말았다. 후반까지 경기를 이끌며 폼이 올라오고 있다는 것은 증명했지만 여전히 라인전에서는 한 끝 부족한 모습을 보였기에 라인전 기량을 스프링 수준까지 끌어올릴 필요가 있다.
-
-되려 아프리카전에서는 1세트 때 다소 밀리는 양상이었으나 직스로 꿋꿋이 버틴 끝에 팀의 한판 뒤집기로 역전승에 성공했고, 2세트에서는 되려 라인전을 압도하면서 팀 승리에 일조하였다.
-
-T1전에서는 올 시즌 가장 좋은 경기력을 선보이며 피넛과 더불어 캐리했는데, 1세트에서는 깜짝 애쉬 픽으로 라인전을 무난히 넘기고 주요 교전 때마다 적절한 수정 화살 활용을 통해 팀 승리에 일조하였다. 2세트에서는 바텀 루시안 - 유미라는 강수를 두고 구마유시의 직스를 상대로 라인전에서 두 번이나 듀오킬을 따내고 한타 때도 절륜한 빛의 심판 활용으로 레오나를 보내버리는 등 전방위적으로 활약하며 터진 정글의 공백을 잘 매꿔줌과 동시에 팀 승리의 일등 공신이 되었다.
-
-담원 기아전에서도 1,2세트는 아펠리오스, 3세트는 이즈리얼을 플레이하며 맹활약했다. 1세트 아펠리오스로는 킬을 쓸어담지는 못했으나 중요한 한타 때마다 잘 살아남으며 팀의 승리를 도왔고, 3세트 이즈리얼은 12/0/4의 KDA, DPM 1237이라는 괴물같은 지표를 기록하면서 게임을 하드 캐리하며 POG를 수상했다.
-
-KT전에서도 1세트 아펠리오스로 한타마다 폭딜을 쏟아부으며 POG를 받았고, 2세트에서는 다시한번 직스를 기용하여 뛰어난 숙련도를 바탕으로 팀의 승리에 기여하였다. 이번경기에 POG를 받음으로써 원딜로써 가장많은 POG인 400포인트를 받게되었고, 본인의 폼도 시즌초반에 비하면 많이 올라왔다.
-
-2라운드 농심이 1위에 올랐으며, 덕담도 한체원 급의 폼을 보여주고 있다. 흥미로운 점은 LPL에선 EDG도 1등을 유지 중인데, 작년 서머 LCK의 최약체 원딜들로 꼽혔던 바이퍼와 덕담이 바덕듀오 이제는 LPL 1등 팀 원딜과 LCK 1등 팀의 원딜이 되었다. 팀 순위도 순위지만 최근 바텀이 돋보이기 어려운 메타 속에서도 굉장히 두각을 드러내는 덕담인데, 사실상 올프로는 따놓은 당상이고 퍼스트로 선정되도 충분히 납득이 가능할 정도의 폼을 뽐내고 있다.[7]
-
-한화생명전에서 1세트 아펠리오스를 가져가면서 KDA 3/0/2를 기록하였다. 라인전에서 쓰레쉬와 함께 잘 성장한 덕에 쉽게 승리를 챙길 수 있었다. 2세트 역시 아펠리오스를 가지고 무난하게 잘 컸으나 5번째 용타임에 궁을 못맞추고 쵸비의 오리아나에게 풀콤보를 맞으면서 그대로 게임을 져버리게 되었다. 3세트에는 덕담의 상징이라고 볼수있는 직스를 뽑고 바루스를 상대로 반반을 가며 무난한 라인전을 진행했고, 잘 성장한 덕에 대치구도에서 놀라운 포킹을 보여주며 승리에 견인하였다.
-
-하지만 아프리카전에서는 안 그래도 상체가 터진 상황에서 레오 - 리헨즈 듀오를 확실히 이기지 못한 채 무력히 팀의 패배를 지켜만 봐야 했다. 실제로 라인전은 무난하게 잘 갔으나 탑 - 미드가 라인전을 지는 것을 넘어 맛집으로 전락하는 바람에 무언가를 보여주지도 못하고 그대로 휩쓸렸다. ㅇㄷㅊㅇ인데 ㅇㄷㅊㅇ가 아니라니
-
-시즌 마지막 경기인 젠지전에서는 도리어 룰러 - 라이프 듀오에게 판정패하며 팀 패배에 일조하고 말았다.
-
-시즌 종료 후 ALL-LCK 1st AD-CARRY로 선정되었다. 정확히 1년전 리그 최악의 원딜로 꼽혔지만 지금은 명실상부 한체원으로 인정 받은 셈. 앞서 말한 바이퍼도 LPL 퍼스트팀 원딜러로 선정되면서 작년 전설의 퍼덕대전이 이제는 세체원을 가리는 급으로 올라와버렸다.
-
-플레이오프 1라운드 아프리카를 상대로는 2, 3세트 POG를 따내며 3:1 승리에 기여했다. 전반적으로 바텀 차이를 계속 내주었지만 특히 2세트에선 아펠리오스로 불리했던 게임에서 딜로 혈을 뚫어버리며 왜 리그 퍼스트 바텀에 선정되었는지를 보여줬다.
-
-하지만 플레이오프 2라운드 담원을 상대로 탑미드는 여전히 라인전부터 두들겨맞느라 정신없는 가운데 본인도 정규 시즌과는 달리 고베 듀오를 상대로 유의미한 성과를 내지 못하고 0:3으로 완패하는데 일조하며 다음 선발전을 기약하게 되었다.
-    </div>
-</body>
-Footer
-</html>
-
+    <main class="content content-padded">ㅎㅇ</main>
+  </body>
